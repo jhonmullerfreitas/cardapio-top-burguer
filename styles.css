@@ -1,0 +1,192 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Arial';
+  background-color: #985702;
+  color: white;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/hamburguers.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.call-to-action {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 3px;
+}
+
+.text-call-to-action {
+  font-weight: bold;
+  color: #333333;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: transparent;
+}
+
+.btn-call-to-action {
+  background-color: #e63946;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-call-to-action:hover {
+  background-color: #c82333;
+}
+
+.title-top-burguer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+.subtitle-top-burguer {
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+
+.category-choices {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  gap: 0.5rem; /* espaço entre os itens */
+  height: 30vh;
+  background-color: #fbf4ec;
+}
+
+.category-box {
+  width: 30vw;
+  background-color: transparent;
+}
+
+.category-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 20vw;
+  background-color: transparent;
+}
+
+.category-legend {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.traditionals-sandwichs,
+.especials-sandwichs,
+.pizzas {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  background-color: #bf6d01;
+  /* height: 100vh; */
+  /* font-size: 1rem; */
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  /* border: 1px solid blue; */
+  background-color: transparent;
+  color: #fbf4ec;
+  margin-top: 3vh;
+}
+
+#traditional-burguer-list,
+#especial-burguer-list,
+#pizza-list {
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(1, 1fr); /* 2 colunas */
+  gap: 0.5rem; /* espaço entre os itens */
+  list-style: none; /* se quiser remover as bolinhas */
+  padding: 0;
+  /* border: 1px solid green; */
+  background-color: transparent;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.item-card {
+  display: flex;
+  width: 100%;
+  height: 25vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(27, 3, 49);
+  /* border: 1px solid #f6b051; */
+  border-radius: 5px;
+}
+
+.div-description {
+  width: 50%;
+  background-color: transparent;
+}
+
+.item-name,
+.item-price,
+.item-ingredient {
+  margin-top: 1vh;
+  background-color: transparent;
+}
+
+.item-name {
+  color: #faf3eb;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.item-price {
+  color: #faf3eb;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.item-ingredient {
+  font-size: 0.7rem;
+}
+
+.item-image {
+  height: 15vh;
+  width: 30%;
+  /* border: 1px solid red; */
+  background-color: transparent;
+}
